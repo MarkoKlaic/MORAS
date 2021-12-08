@@ -1,0 +1,15 @@
+CHIP Mult4{
+  IN in[16];
+  OUT out[16];
+  
+/**
+  Micemo za 2 mjesta u lijevo svaku znamenku jer tako dobijamo 4 puta veći broj
+*/
+
+  PARTS:
+  BitShiftL(in = in ,out = shift);
+  BitShiftL(in = shift, out = out);
+
+
+
+}
