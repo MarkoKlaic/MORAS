@@ -1,0 +1,11 @@
+sp
+call zad2a.Main 0
+ep
+
+function Main 0
+push constant 7
+push constant 3
+push constant 5
+call mid.Mid 3
+pop static 0
+return
